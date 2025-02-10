@@ -12,9 +12,9 @@ app.get("/gm", (req: Request, res: Response) => {
   res.json({ message: "Hello good morning peeps" });
 });
 
-app.get("/gn", (req: Request, res: Response) => {
+app.get("/greetings/night", (req: Request, res: Response) => {
   res.json({ message: "Hello good night peeps, have a great day" });
-
+});
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
